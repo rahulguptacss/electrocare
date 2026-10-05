@@ -5,11 +5,12 @@ import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
 import { FooterProps } from '../../types';
 import { MapPin, Phone, Mail, Clock, Zap, ChevronRight, ChevronDown } from 'lucide-react';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 const socialIconMap: Record<string, React.ElementType> = {
   Facebook: FaFacebookF,
-  Twitter: FaTwitter,
+  Twitter: FaXTwitter,
   Instagram: FaInstagram,
   Linkedin: FaLinkedinIn,
   Youtube: FaYoutube,

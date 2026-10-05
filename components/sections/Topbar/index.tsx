@@ -2,7 +2,8 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 import { TopbarProps } from '../../types';
 import { fadeIn } from '../../motion';
 
@@ -14,7 +15,7 @@ const contactIconMap: Record<string, React.ElementType> = {
 
 const socialIconMap: Record<string, React.ElementType> = {
   Facebook: FaFacebookF,
-  Twitter: FaTwitter,
+  Twitter: FaXTwitter,
   Instagram: FaInstagram,
   Linkedin: FaLinkedinIn,
 };
