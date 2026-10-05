@@ -3,7 +3,8 @@ import Topbar from '../../../components/sections/Topbar';
 import Header from '../../../components/sections/Header';
 import Footer from '../../../components/sections/Footer';
 import BackToTop from '../../../components/ui/BackToTop';
-import PageSections from '../../../components/PageSections';
+import Breadcrumb from '../../../components/sections/Breadcrumb';
+import ServiceDetails from '../../../components/sections/ServiceDetails';
 import { common, pages, sections, toSlug, ServiceDetailsData } from '../../../components/types';
 import { notFound } from 'next/navigation';
 
@@ -53,20 +54,18 @@ export default async function ServiceDetailsPage({ params }: { params: Promise<{
       <Topbar data={common.Topbar} />
       <Header data={common.Header} />
       <main className="w-full flex-1">
-        <PageSections
-          page={pageData}
-          extra={{
-            breadcrumbTitle: pageData.title,
-            breadcrumb: [
-              { label: 'Home', href: '/' },
-              { label: pageData.pageName },
-            ],
-            serviceDetails: {
-              data: serviceData,
-              allServices: items,
-              sidebarData: sections.services.sidebar,
-            },
-          }}
+        <Breadcrumb
+          title={pageData.title}
+          breadcrumb={[
+            { label: 'Home', href: '/' },
+            { label: pageData.pageName },
+          ]}
+          backgroundImage="/img/breadcrumb.png"
+        />
+        <ServiceDetails
+          data={serviceData}
+          allServices={items}
+          sidebarData={sections.services.sidebar}
         />
       </main>
       <Footer data={common.Footer} />

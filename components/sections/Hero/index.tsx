@@ -58,12 +58,12 @@ export default function Hero({ data }: HeroProps) {
           className="w-full max-w-[540px] pl-2 text-white sm:pl-14 lg:pl-[88px]"
         >
           <div className="mb-3 flex items-center gap-2 sm:mb-4 sm:gap-3">
-            <span className="inline-flex items-center text-[#1B8A3E]">
-              <span className="h-[2px] w-7 bg-[#1B8A3E]" />
+            <span className="inline-flex items-center text-white">
+              <span className="h-[2px] w-7 bg-white" />
               <ArrowRight size={16} className="-ml-[2px]" />
             </span>
             <p className="text-[10px] font-bold uppercase tracking-[1.6px] sm:text-[11px] sm:tracking-[2.2px]">
-              <span className="text-[#1B8A3E]">{subFirst}</span>
+              <span className="text-white">{subFirst}</span>
               {subRest ? <span className="text-white"> {subRest}</span> : null}
             </p>
           </div>
@@ -71,7 +71,7 @@ export default function Hero({ data }: HeroProps) {
           <h1 className="mb-4 text-[28px] font-extrabold leading-[1.12] sm:text-[40px] lg:text-[46px]">
             <span className="block text-white">{slide.title_line1}</span>
             <span className="block whitespace-nowrap">
-              <span className="text-[#1B8A3E]">{slide.title_highlight}</span>{' '}
+              <span className="text-white">{slide.title_highlight}</span>{' '}
               <span className="text-white">{slide.title_line2}</span>
             </span>
           </h1>

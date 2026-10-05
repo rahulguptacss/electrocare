@@ -108,15 +108,15 @@ export default function ServiceDetails({ data, allServices, sidebarData }: Servi
             />
             <div className="absolute inset-0 bg-gradient-to-r from-[#06243b]/88 via-[#06243b]/55 to-transparent" />
             <div className="absolute inset-0 flex flex-col justify-center px-6 sm:px-10">
-              <p className="mb-2 text-[11px] font-extrabold uppercase tracking-[3px] text-white/80 sm:text-[12px]">
+              <p className="mb-2 text-[11px] font-extrabold uppercase tracking-[3px] text-white sm:text-[12px]">
                 {data.badge || 'PROFESSIONAL'}
               </p>
               <h2 className="max-w-[420px] text-[28px] font-extrabold leading-[1.15] text-white sm:text-[36px] lg:text-[42px]">
                 {overlayLine1}{' '}
-                <span className="text-[#1B8A3E]">{overlayHighlight}</span>
+                <span className="text-white">{overlayHighlight}</span>
               </h2>
               {(data.overlay_tagline || data.subtitle) && (
-                <p className="mt-3 max-w-[280px] text-[14px] leading-snug text-white/85 sm:text-[15px]">
+                <p className="mt-3 max-w-[280px] text-[14px] leading-snug text-white sm:text-[15px]">
                   {data.overlay_tagline || data.subtitle}
                 </p>
               )}
