@@ -1,0 +1,1175 @@
+{
+  "common": {
+    "Topbar": {
+      "follow_text": "Follow Us:",
+      "contact_info": [
+        {
+          "icon": "MapPin",
+          "value": "123 Education Lane, New York, NY 10001"
+        },
+        {
+          "icon": "Mail",
+          "value": "info@xyz.com"
+        },
+        {
+          "icon": "Phone",
+          "value": "+1 00000000000"
+        }
+      ],
+      "socials": [
+        {
+          "icon": "Facebook",
+          "href": "https://www.facebook.com/"
+        },
+        {
+          "icon": "Twitter",
+          "href": "https://x.com/"
+        },
+        {
+          "icon": "Instagram",
+          "href": "https://www.instagram.com/"
+        },
+        {
+          "icon": "Linkedin",
+          "href": "https://www.linkedin.com/"
+        }
+      ]
+    },
+    "Header": {
+      "logo_text": "ElectroCare",
+      "links": [
+        {
+          "name": "Home",
+          "href": "/",
+          "active": true
+        },
+        {
+          "name": "About",
+          "href": "/about"
+        },
+        {
+          "name": "Services",
+          "href": "/services"
+        },
+        {
+          "name": "Gallery",
+          "href": "/gallery"
+        },
+        {
+          "name": "Contact",
+          "href": "/contact"
+        }
+      ],
+      "button_text": "GET A QUOTE",
+      "button_link": "/get-a-quote"
+    },
+    "Footer": {
+      "logo_text": "ElectroCare",
+      "description": "Your trusted partner for safe, reliable and professional electrical solutions. We power homes, businesses and brighter futures.",
+      "socials": [
+        {
+          "icon": "Facebook",
+          "href": "https://www.facebook.com/"
+        },
+        {
+          "icon": "Twitter",
+          "href": "https://x.com/"
+        },
+        {
+          "icon": "Instagram",
+          "href": "https://www.instagram.com/"
+        },
+        {
+          "icon": "Linkedin",
+          "href": "https://www.linkedin.com/"
+        },
+        {
+          "icon": "Youtube",
+          "href": "https://www.youtube.com/"
+        }
+      ],
+      "quick_links": [
+        {
+          "name": "Home",
+          "href": "/"
+        },
+        {
+          "name": "About Us",
+          "href": "/about"
+        },
+        {
+          "name": "Our Services",
+          "href": "/services"
+        },
+        {
+          "name": "Gallery",
+          "href": "/gallery"
+        },
+        {
+          "name": "Testimonials",
+          "href": "/#testimonials"
+        },
+        {
+          "name": "Contact Us",
+          "href": "/contact"
+        }
+      ],
+      "our_services": [
+        {
+          "name": "Electrical Installation",
+          "href": "/services/electrical-installation"
+        },
+        {
+          "name": "Lighting Solutions",
+          "href": "/services/lighting-solutions"
+        },
+        {
+          "name": "Panel Upgrade & Repair",
+          "href": "/services/panel-upgrade-repair"
+        },
+        {
+          "name": "Switch & Socket Repair",
+          "href": "/services/switch-socket-repair"
+        },
+        {
+          "name": "AC Electrical Work",
+          "href": "/services/ac-electrical-work"
+        },
+        {
+          "name": "CCTV & Security Wiring",
+          "href": "/services/cctv-security-wiring"
+        }
+      ],
+      "support": [
+        {
+          "name": "FAQ",
+          "href": "/contact"
+        },
+        {
+          "name": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "name": "Terms & Conditions",
+          "href": "/terms"
+        },
+        {
+          "name": "Sitemap",
+          "href": "/sitemap"
+        },
+        {
+          "name": "Get A Quote",
+          "href": "/get-a-quote"
+        },
+        {
+          "name": "Emergency Support",
+          "href": "/contact"
+        }
+      ],
+      "contact": {
+        "phone": "+1 00000000000",
+        "email": "info@xyz.com",
+        "address": "123 Education Lane, New York, NY 10001",
+        "hours": "Mon - Sat: 9:00 AM - 7:00 PM"
+      },
+      "copyright": "Copyright © 2026. All rights reserved. Powered by Lestow"
+    }
+  },
+  "categories": {
+    "Electrical": {
+      "templateComponents": {
+        "template-1": {
+          "pages": {
+            "home": {
+              "title": "Home",
+              "pageName": "Home",
+              "metadata": {
+                "title": "ElectroCare - Electrical Services"
+              },
+              "components": [
+                {
+                  "key": "HeroSection",
+                  "component": "Hero"
+                },
+                {
+                  "key": "AboutSection",
+                  "component": "About"
+                },
+                {
+                  "key": "ServicesSection",
+                  "component": "Services"
+                },
+                {
+                  "key": "StatsSection",
+                  "component": "Stats"
+                },
+                {
+                  "key": "TestimonialsSection",
+                  "component": "Testimonials"
+                }
+              ]
+            },
+            "about": {
+              "title": "About Us",
+              "pageName": "About Us",
+              "metadata": {
+                "title": "ElectroCare - About Us"
+              },
+              "components": [
+                {
+                  "key": "BreadcrumbSection",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "AboutSection",
+                  "component": "About"
+                },
+                {
+                  "key": "StatsSection",
+                  "component": "Stats"
+                },
+                {
+                  "key": "WhyChooseSection",
+                  "component": "WhyChoose"
+                },
+                {
+                  "key": "WorkProcessSection",
+                  "component": "WorkProcess"
+                }
+              ]
+            },
+            "services": {
+              "title": "Our Services",
+              "pageName": "Our Services",
+              "metadata": {
+                "title": "ElectroCare - Services"
+              },
+              "components": [
+                {
+                  "key": "BreadcrumbSection",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "ServicesGridSection",
+                  "component": "Services"
+                },
+                {
+                  "key": "StatsSection",
+                  "component": "Stats"
+                }
+              ]
+            },
+            "service_details": {
+              "title": "Service Details",
+              "pageName": "Service Details",
+              "metadata": {
+                "title": "ElectroCare - Service Details"
+              },
+              "components": [
+                {
+                  "key": "BreadcrumbSection",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "ServiceDetailsSection",
+                  "component": "ServiceDetails"
+                }
+              ]
+            },
+            "contact": {
+              "title": "Contact Us",
+              "pageName": "Contact Us",
+              "metadata": {
+                "title": "ElectroCare - Contact Us"
+              },
+              "components": [
+                {
+                  "key": "BreadcrumbSection",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "ContactSection",
+                  "component": "Contact"
+                }
+              ]
+            },
+            "gallery": {
+              "title": "Our Gallery",
+              "pageName": "Our Gallery",
+              "metadata": {
+                "title": "ElectroCare - Gallery"
+              },
+              "components": [
+                {
+                  "key": "BreadcrumbSection",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "PhotoGallerySection",
+                  "component": "PhotoGallery"
+                }
+              ]
+            },
+            "get_a_quote": {
+              "title": "Get A Quote",
+              "pageName": "Get A Quote",
+              "metadata": {
+                "title": "ElectroCare - Get A Quote"
+              },
+              "components": [
+                {
+                  "key": "BreadcrumbSection",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "QuoteSection",
+                  "component": "Quote"
+                }
+              ]
+            },
+            "thank_you": {
+              "title": "Thank You",
+              "pageName": "Thank You",
+              "metadata": {
+                "title": "ElectroCare - Thank You"
+              },
+              "components": [
+                {
+                  "key": "ThankYouSection",
+                  "component": "ThankYou"
+                }
+              ]
+            },
+            "not_found": {
+              "title": "404 Error",
+              "pageName": "404 Error",
+              "heading": "Oops! Page Not Found",
+              "description": "The page you're looking for doesn't exist or may have been moved. Let's get you back on track.",
+              "button_text": "Go to Home",
+              "button_href": "/",
+              "metadata": {
+                "title": "ElectroCare - 404 Page Not Found"
+              },
+              "components": []
+            }
+          },
+          "sections": {
+            "hero": {
+              "slides": [
+                {
+                  "subtitle": "PROFESSIONAL ELECTRICAL SERVICES",
+                  "title_line1": "Safe Power",
+                  "title_highlight": "Brighter",
+                  "title_line2": "Tomorrow",
+                  "description": "Expert electrical solutions for homes, offices and businesses. Quality work, on time, every time.",
+                  "primary_button": {
+                    "text": "GET A QUOTE",
+                    "href": "/get-a-quote"
+                  },
+                  "phone": "+1 00000000000",
+                  "video_button_link": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                }
+              ]
+            },
+            "about": {
+              "subtitle": "ABOUT US",
+              "title_line1": "We Are Committed To",
+              "title_highlight": "Provide",
+              "title_line2": "Reliable Electrical Services",
+              "description": "We are a trusted electrical service provider offering safe, efficient and high-quality solutions for homes, offices and commercial spaces. With experienced professionals and a customer-first approach, we ensure every project is completed on time and to the highest safety standards.",
+              "image": "/img/about.png",
+              "badge": {
+                "value": "10+",
+                "label": "Years Of Quality Service"
+              },
+              "cards": [
+                {
+                  "title": "Residential Solutions",
+                  "description": "Safe and reliable electrical work for your home.",
+                  "icon": "Home"
+                },
+                {
+                  "title": "Commercial Services",
+                  "description": "Complete electrical solutions for offices and businesses.",
+                  "icon": "Building2"
+                }
+              ],
+              "features": [
+                "Skilled and certified electricians",
+                "Use of premium quality materials",
+                "On-time service with complete safety"
+              ],
+              "button": {
+                "text": "DISCOVER MORE",
+                "href": "/about"
+              },
+              "phone": "+1 00000000000"
+            },
+            "services": {
+              "subtitle": "OUR SERVICES",
+              "title_line1": "Complete",
+              "title_highlight": "Electrical",
+              "title_line2": "Solutions",
+              "description": "We provide a wide range of professional electrical services for residential, commercial and industrial needs, ensuring safety, efficiency and long-lasting performance.",
+              "button": {
+                "text": "VIEW ALL SERVICES",
+                "href": "/services"
+              },
+              "sidebar": {
+                "services_title": "Our Services",
+                "help": {
+                  "title": "Need Assistance?",
+                  "description": "We're here to help you.",
+                  "phone": "+1 00000000000",
+                  "button_text": "Contact Us",
+                  "button_href": "/contact"
+                }
+              },
+              "items": [
+                {
+                  "title": "Electrical Installation",
+                  "description": "Professional installation of wiring, lighting, panels and complete electrical systems.",
+                  "icon": "Home",
+                  "image": "/services/service-01.png",
+                  "link": "/services/electrical-installation"
+                },
+                {
+                  "title": "Lighting Solutions",
+                  "description": "Modern and energy-efficient lighting solutions for homes, offices and commercial spaces.",
+                  "icon": "Lightbulb",
+                  "image": "/services/service-02.png",
+                  "link": "/services/lighting-solutions"
+                },
+                {
+                  "title": "Panel Upgrade & Repair",
+                  "description": "Installation, repair and upgrade of electrical panels for safe and reliable power distribution.",
+                  "icon": "LayoutGrid",
+                  "image": "/services/service-03.png",
+                  "link": "/services/panel-upgrade-repair"
+                },
+                {
+                  "title": "Switch & Socket Repair",
+                  "description": "Quick and reliable repair or replacement of switches, sockets and fittings.",
+                  "icon": "Plug",
+                  "image": "/services/service-04.png",
+                  "link": "/services/switch-socket-repair"
+                },
+                {
+                  "title": "Fan Installation & Repair",
+                  "description": "Installation, repair and maintenance of ceiling and exhaust fans.",
+                  "icon": "Fan",
+                  "image": "/services/service-05.png",
+                  "link": "/services/fan-installation-repair"
+                },
+                {
+                  "title": "AC Electrical Work",
+                  "description": "Dedicated electrical work for AC installation, dedicated wiring and safety connections.",
+                  "icon": "Snowflake",
+                  "image": "/services/service-06.png",
+                  "link": "/services/ac-electrical-work"
+                },
+                {
+                  "title": "CCTV & Security Wiring",
+                  "description": "Electrical wiring and setup for CCTV cameras and security systems.",
+                  "icon": "Cctv",
+                  "image": "/services/service-07.png",
+                  "link": "/services/cctv-security-wiring"
+                },
+                {
+                  "title": "Inverter & Generator Setup",
+                  "description": "Installation and electrical connections for inverters and generators.",
+                  "icon": "BatteryCharging",
+                  "image": "/services/service-08.png",
+                  "link": "/services/inverter-generator-setup"
+                }
+              ]
+            },
+            "stats": {
+              "items": [
+                {
+                  "value": "10K+",
+                  "label": "Happy Customers",
+                  "icon": "Users"
+                },
+                {
+                  "value": "500+",
+                  "label": "Projects Completed",
+                  "icon": "Settings"
+                },
+                {
+                  "value": "25+",
+                  "label": "Skilled Electricians",
+                  "icon": "HardHat"
+                },
+                {
+                  "value": "24/7",
+                  "label": "Emergency Support",
+                  "icon": "Clock"
+                }
+              ]
+            },
+            "testimonials": {
+              "subtitle": "TESTIMONIALS",
+              "title_line1": "What Our",
+              "title_highlight": "Clients",
+              "title_line2": "Say",
+              "description": "We take pride in delivering safe, reliable and high-quality electrical services. Here's what our valued clients have to say about their experience with us.",
+              "reviews": [
+                {
+                  "text": "Excellent service! The team was very professional, arrived on time and fixed our electrical issue quickly. Highly recommended for anyone looking for reliable electricians.",
+                  "author": "Rohit Sharma",
+                  "role": "Delhi, India",
+                  "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+                  "rating": 5
+                },
+                {
+                  "text": "Very satisfied with their work. They installed new lighting at our office and the entire process was smooth and hassle-free. Great support and professional team!",
+                  "author": "Priya Mehta",
+                  "role": "Noida, India",
+                  "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80",
+                  "rating": 5
+                },
+                {
+                  "text": "Reliable, honest and skilled electricians. They resolved our power issue the same day and gave useful suggestions for safety improvements. I will definitely hire them again.",
+                  "author": "Amit Verma",
+                  "role": "Gurugram, India",
+                  "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
+                  "rating": 5
+                },
+                {
+                  "text": "They upgraded our old panel without any mess. Clear pricing, neat finishing and the wiring feels much safer now. I would book ElectroCare again without a second thought.",
+                  "author": "Neha Kapoor",
+                  "role": "Jaipur, India",
+                  "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=200&q=80",
+                  "rating": 5
+                },
+                {
+                  "text": "Called them for an emergency and they reached quickly. The electrician explained the fault, replaced the switches and tested everything before leaving. Very dependable team.",
+                  "author": "Karan Singh",
+                  "role": "Chandigarh, India",
+                  "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80",
+                  "rating": 5
+                }
+              ]
+            },
+            "why_choose": {
+              "subtitle": "WHY CHOOSE US",
+              "title_line1": "The Right Choice",
+              "title_line2": "for Your",
+              "title_highlight": "Electrical Needs",
+              "description": "We are committed to delivering safe, reliable and high-quality electrical solutions with a focus on customer satisfaction, safety and long-term value.",
+              "image": "/img/about.png",
+              "badge_title": "Trusted by Thousands of Happy Customers",
+              "badge_text": "Your Safety. Our Priority.",
+              "button": {
+                "text": "GET A QUOTE",
+                "href": "/get-a-quote"
+              },
+              "items": [
+                {
+                  "number": "01",
+                  "icon": "Award",
+                  "title": "Licensed & Certified Electricians",
+                  "description": "Our team consists of skilled and certified professionals who follow industry standards and safety guidelines."
+                },
+                {
+                  "number": "02",
+                  "icon": "Clock",
+                  "title": "24/7 Emergency Services",
+                  "description": "Electrical issues can happen anytime. We are always ready to help you, day or night."
+                },
+                {
+                  "number": "03",
+                  "icon": "HandCoins",
+                  "title": "Transparent Pricing",
+                  "description": "No hidden charges or surprise costs. We provide clear and competitive quotes before starting any work."
+                },
+                {
+                  "number": "04",
+                  "icon": "Settings",
+                  "title": "Quality Workmanship",
+                  "description": "We use high-quality materials and follow best practices to ensure long-lasting and reliable results."
+                },
+                {
+                  "number": "05",
+                  "icon": "Users",
+                  "title": "100% Customer Satisfaction",
+                  "description": "Our customers' trust and satisfaction drive everything we do. We go the extra mile to exceed your expectations."
+                }
+              ]
+            },
+            "work_process": {
+              "subtitle": "HOW IT WORKS",
+              "title_line1": "Our Working",
+              "title_highlight": "Process",
+              "description": "We follow a simple and transparent process to make your electrical service experience hassle-free, from booking to completion.",
+              "button": {
+                "text": "Get Started Today",
+                "href": "/get-a-quote"
+              },
+              "steps": [
+                {
+                  "number": "01",
+                  "icon": "CalendarPlus",
+                  "title": "Book Your Service",
+                  "description": "Schedule your electrical service online or give us a call. Choose your preferred date and time."
+                },
+                {
+                  "number": "02",
+                  "icon": "Headset",
+                  "title": "Get Confirmation",
+                  "description": "Our team will review your request and confirm your appointment with all the details."
+                },
+                {
+                  "number": "03",
+                  "icon": "ReceiptIndianRupee",
+                  "title": "Receive Estimate",
+                  "description": "We assess your requirements and provide a clear and transparent estimate."
+                },
+                {
+                  "number": "04",
+                  "icon": "Wrench",
+                  "title": "Service Completion",
+                  "description": "Our expert electricians complete the work with quality and safety. Your satisfaction is our priority."
+                }
+              ]
+            },
+            "get_a_quote": {
+              "subtitle": "GET A QUOTE",
+              "title_line1": "Get A Quote for Your",
+              "title_highlight": "Electrical Service",
+              "description": "Tell us about your requirements and our team will provide you with a customized quote as per your needs. It's quick, easy and obligation-free.",
+              "image": "/img/getaqoute.png",
+              "info_card": {
+                "title": "Professional Electrical Services",
+                "description": "Safe, Reliable & Affordable Solutions for Your Home and Business."
+              },
+              "features": [
+                {
+                  "icon": "ShieldCheck",
+                  "title": "Quick Response",
+                  "description": "We respond to all quote requests promptly."
+                },
+                {
+                  "icon": "Settings",
+                  "title": "Custom Solutions",
+                  "description": "Get a quote tailored to your specific requirements."
+                },
+                {
+                  "icon": "IndianRupee",
+                  "title": "Transparent Pricing",
+                  "description": "No hidden charges. Clear and detailed quotes."
+                },
+                {
+                  "icon": "Headset",
+                  "title": "Expert Consultation",
+                  "description": "Our team is here to help you choose the best solution."
+                }
+              ],
+              "form": {
+                "title": "Request a Free",
+                "title_highlight": "Quote",
+                "description": "Fill in the details below and we'll get back to you shortly.",
+                "button_text": "Submit Request",
+                "footer_text": "Your information is safe with us. We never share your details with anyone.",
+                "labels": {
+                  "name": "Full Name",
+                  "email": "Email Address",
+                  "phone": "Phone Number",
+                  "service": "Service Type",
+                  "location": "Service Location",
+                  "message": "Your Requirements"
+                },
+                "placeholders": {
+                  "name": "Enter your full name",
+                  "phone": "Enter your phone number",
+                  "email": "Enter your email address",
+                  "service": "Select service",
+                  "location": "Enter your address or location",
+                  "message": "Please describe your requirements in detail"
+                }
+              }
+            },
+            "contact": {
+              "cards": [
+                {
+                  "icon": "MapPin",
+                  "title": "Office Address",
+                  "value": "123 Education Lane,",
+                  "value_line2": "New York, NY 10001"
+                },
+                {
+                  "icon": "Phone",
+                  "title": "Call Us",
+                  "value": "+1 00000000000",
+                  "value_line2": "Mon - Sat: 9:00 AM - 7:00 PM",
+                  "href": "tel:+100000000000"
+                },
+                {
+                  "icon": "Mail",
+                  "title": "Email Us",
+                  "value": "info@xyz.com",
+                  "value_line2": "We reply within 24 hours",
+                  "href": "mailto:info@xyz.com"
+                },
+                {
+                  "icon": "Clock",
+                  "title": "Working Hours",
+                  "value": "Mon - Sat: 9:00 AM - 7:00 PM",
+                  "value_line2": "Sunday: Closed"
+                }
+              ],
+              "form": {
+                "subtitle": "SEND US A MESSAGE",
+                "description": "Have a question or need a quote? Fill out the form below and our team will get back to you shortly.",
+                "button_text": "SEND MESSAGE",
+                "footer_text": "Your information is safe with us. We never share your details with anyone.",
+                "checkbox_text": "I agree to be contacted about my inquiry.",
+                "placeholders": {
+                  "name": "Your Name",
+                  "email": "Your Email",
+                  "phone": "Your Phone Number",
+                  "service": "Select Service",
+                  "location": "Your Location",
+                  "message": "Write Your Message"
+                }
+              },
+              "features": [
+                {
+                  "icon": "ShieldCheck",
+                  "title": "Quick Response",
+                  "description": "We respond to all inquiries promptly."
+                },
+                {
+                  "icon": "Users",
+                  "title": "Expert Support",
+                  "description": "Get guidance from our experienced team."
+                },
+                {
+                  "icon": "Settings",
+                  "title": "Customized Solutions",
+                  "description": "We provide solutions tailored to your needs."
+                },
+                {
+                  "icon": "Handshake",
+                  "title": "Customer Satisfaction",
+                  "description": "Your satisfaction is our priority."
+                }
+              ],
+              "center": {
+                "image": "/img/contact.png",
+                "title": "Let's",
+                "title_highlight": "Connect"
+              },
+              "map": {
+                "embed_url": "https://maps.google.com/maps?q=123%20Education%20Lane%2C%20New%20York%2C%20NY%2010001&t=&z=14&ie=UTF8&iwloc=&output=embed",
+                "label": "Find Us"
+              }
+            },
+            "photo_gallery": {
+              "subtitle": "GALLERY",
+              "title_line1": "Our Work",
+              "title_highlight": "Gallery",
+              "description": "Take a look at some of our recent electrical installation, repair and maintenance projects. Our work showcases our commitment to quality, safety and customer satisfaction.",
+              "items_per_page": 12,
+              "filters": [
+                {
+                  "label": "All Projects",
+                  "value": "all"
+                },
+                {
+                  "label": "Home Wiring",
+                  "value": "home"
+                },
+                {
+                  "label": "Lighting Installation",
+                  "value": "lighting"
+                },
+                {
+                  "label": "Panel Installation",
+                  "value": "panel"
+                },
+                {
+                  "label": "Socket & Switch",
+                  "value": "socket"
+                },
+                {
+                  "label": "Commercial",
+                  "value": "commercial"
+                },
+                {
+                  "label": "Maintenance",
+                  "value": "maintenance"
+                }
+              ],
+              "items": [
+                {
+                  "image": "/gallery/1.png",
+                  "alt": "Gallery 1",
+                  "category": "panel"
+                },
+                {
+                  "image": "/gallery/2.png",
+                  "alt": "Gallery 2",
+                  "category": "home"
+                },
+                {
+                  "image": "/gallery/3.png",
+                  "alt": "Gallery 3",
+                  "category": "socket"
+                },
+                {
+                  "image": "/gallery/4.png",
+                  "alt": "Gallery 4",
+                  "category": "panel"
+                },
+                {
+                  "image": "/gallery/5.png",
+                  "alt": "Gallery 5",
+                  "category": "lighting"
+                },
+                {
+                  "image": "/gallery/6.png",
+                  "alt": "Gallery 6",
+                  "category": "lighting"
+                },
+                {
+                  "image": "/gallery/7.png",
+                  "alt": "Gallery 7",
+                  "category": "home"
+                },
+                {
+                  "image": "/gallery/8.png",
+                  "alt": "Gallery 8",
+                  "category": "socket"
+                },
+                {
+                  "image": "/gallery/9.png",
+                  "alt": "Gallery 9",
+                  "category": "commercial"
+                },
+                {
+                  "image": "/gallery/10.png",
+                  "alt": "Gallery 10",
+                  "category": "panel"
+                },
+                {
+                  "image": "/gallery/11.png",
+                  "alt": "Gallery 11",
+                  "category": "lighting"
+                },
+                {
+                  "image": "/gallery/service-01.png",
+                  "alt": "Electrical Installation",
+                  "category": "lighting"
+                },
+                {
+                  "image": "/gallery/service-02.png",
+                  "alt": "Lighting Solutions",
+                  "category": "maintenance"
+                },
+                {
+                  "image": "/gallery/service-03.png",
+                  "alt": "Panel Upgrade",
+                  "category": "panel"
+                },
+                {
+                  "image": "/gallery/service-04.png",
+                  "alt": "Switch & Socket",
+                  "category": "socket"
+                },
+                {
+                  "image": "/gallery/service-05.png",
+                  "alt": "Fan Installation",
+                  "category": "lighting"
+                },
+                {
+                  "image": "/gallery/service-06.png",
+                  "alt": "AC Electrical",
+                  "category": "commercial"
+                },
+                {
+                  "image": "/gallery/service-07.png",
+                  "alt": "CCTV Wiring",
+                  "category": "commercial"
+                },
+                {
+                  "image": "/gallery/service-08.png",
+                  "alt": "Inverter Setup",
+                  "category": "maintenance"
+                }
+              ]
+            },
+            "thank_you": {
+              "title": "Thank",
+              "title_highlight": "You!",
+              "description": "We have received your request. An ElectroCare specialist will contact you shortly.",
+              "button": {
+                "text": "Return Home",
+                "href": "/"
+              }
+            },
+            "service_details": [
+              {
+                "slug": "electrical-installation",
+                "title": "Electrical Installation",
+                "subtitle": "Complete wiring for new and existing spaces.",
+                "description": "From first-fix cabling to final testing, we install safe electrical systems for homes and commercial sites.",
+                "badge": "PROFESSIONAL",
+                "overlay_line1": "Electrical",
+                "overlay_highlight": "Installation",
+                "overlay_tagline": "Safe Solutions for a Brighter Tomorrow",
+                "content_blocks": [
+                  {
+                    "title": "Electrical Installation Services",
+                    "text": "We provide safe, reliable and professional electrical installation services for homes, offices and commercial spaces. Our team handles everything from new wiring and fixture installation to complete electrical system setup with high-quality materials and industry-standard safety practices. Whether you are building a new property or renovating an existing space, we ensure a smooth and efficient installation process tailored to your needs."
+                  },
+                  {
+                    "title": "Residential Electrical Installation",
+                    "text": "From lighting and ceiling fans to switches, sockets and complete home wiring, we deliver customized electrical solutions for modern homes. Our certified electricians ensure safe and neat installations that enhance comfort, convenience and energy efficiency for your family."
+                  },
+                  {
+                    "title": "Commercial Electrical Installation",
+                    "text": "We offer comprehensive electrical installation services for offices, shops, showrooms and industrial spaces. Our solutions are designed to meet higher load requirements while ensuring minimal downtime and maximum safety. We work closely with clients to deliver efficient and future-ready electrical systems."
+                  },
+                  {
+                    "title": "Quality & Safety Assurance",
+                    "text": "Safety is our top priority. We use premium-quality wires, switches and electrical components from trusted brands. All installations are carried out by skilled and certified professionals who follow industry standards and local regulations. Our focus is to deliver long-lasting performance with complete peace of mind."
+                  },
+                  {
+                    "title": "Why Choose Our Electrical Installation?",
+                    "text": "With years of experience, skilled technicians and a customer-first approach, we have become a trusted name in electrical installation services. We provide transparent pricing, on-time project completion and dedicated support to ensure your complete satisfaction."
+                  }
+                ]
+              },
+              {
+                "slug": "lighting-solutions",
+                "title": "Lighting Solutions",
+                "subtitle": "Designed for comfort and savings.",
+                "description": "Indoor, outdoor and commercial lighting planned for brightness, style and energy use.",
+                "badge": "PROFESSIONAL",
+                "overlay_line1": "Lighting",
+                "overlay_highlight": "Solutions",
+                "overlay_tagline": "Safe Solutions for a Brighter Tomorrow",
+                "content_blocks": [
+                  {
+                    "title": "Lighting Solutions Services",
+                    "text": "Indoor, outdoor and commercial lighting planned for brightness, style and energy use. Our licensed electricians follow safety codes and complete every job with neat finishing and proper testing."
+                  },
+                  {
+                    "title": "Residential Lighting Solutions",
+                    "text": "We tailor lighting solutions for homes with clear pricing, safe materials and minimal disruption to your daily routine."
+                  },
+                  {
+                    "title": "Commercial Lighting Solutions",
+                    "text": "Offices and businesses get load-ready lighting solutions planned for uptime, safety and future expansion."
+                  },
+                  {
+                    "title": "Quality & Safety Assurance",
+                    "text": "Premium materials, certified electricians and full testing after work. Safety remains the first checkpoint on every visit."
+                  },
+                  {
+                    "title": "Why Choose Our Lighting Solutions?",
+                    "text": "Transparent quotes, on-time completion and dedicated support. ElectroCare is built around reliable electrical work you can trust."
+                  }
+                ]
+              },
+              {
+                "slug": "panel-upgrade-repair",
+                "title": "Panel Upgrade & Repair",
+                "subtitle": "Safer distribution for growing loads.",
+                "description": "We repair, replace and upgrade DB panels with proper MCBs, RCCBs and labelling.",
+                "badge": "PROFESSIONAL",
+                "overlay_line1": "Panel",
+                "overlay_highlight": "Upgrade & Repair",
+                "overlay_tagline": "Safe Solutions for a Brighter Tomorrow",
+                "content_blocks": [
+                  {
+                    "title": "Panel Upgrade & Repair Services",
+                    "text": "We repair, replace and upgrade DB panels with proper MCBs, RCCBs and labelling. Our licensed electricians follow safety codes and complete every job with neat finishing and proper testing."
+                  },
+                  {
+                    "title": "Residential Panel Upgrade & Repair",
+                    "text": "We tailor panel upgrade & repair for homes with clear pricing, safe materials and minimal disruption to your daily routine."
+                  },
+                  {
+                    "title": "Commercial Panel Upgrade & Repair",
+                    "text": "Offices and businesses get load-ready panel upgrade & repair planned for uptime, safety and future expansion."
+                  },
+                  {
+                    "title": "Quality & Safety Assurance",
+                    "text": "Premium materials, certified electricians and full testing after work. Safety remains the first checkpoint on every visit."
+                  },
+                  {
+                    "title": "Why Choose Our Panel Upgrade & Repair?",
+                    "text": "Transparent quotes, on-time completion and dedicated support. ElectroCare is built around reliable electrical work you can trust."
+                  }
+                ]
+              },
+              {
+                "slug": "switch-socket-repair",
+                "title": "Switch & Socket Repair",
+                "subtitle": "Fast fixes for daily electrical fittings.",
+                "description": "Loose plates, sparking switches and damaged sockets replaced with branded fittings.",
+                "badge": "PROFESSIONAL",
+                "overlay_line1": "Switch",
+                "overlay_highlight": "& Socket Repair",
+                "overlay_tagline": "Safe Solutions for a Brighter Tomorrow",
+                "content_blocks": [
+                  {
+                    "title": "Switch & Socket Repair Services",
+                    "text": "Loose plates, sparking switches and damaged sockets replaced with branded fittings. Our licensed electricians follow safety codes and complete every job with neat finishing and proper testing."
+                  },
+                  {
+                    "title": "Residential Switch & Socket Repair",
+                    "text": "We tailor switch & socket repair for homes with clear pricing, safe materials and minimal disruption to your daily routine."
+                  },
+                  {
+                    "title": "Commercial Switch & Socket Repair",
+                    "text": "Offices and businesses get load-ready switch & socket repair planned for uptime, safety and future expansion."
+                  },
+                  {
+                    "title": "Quality & Safety Assurance",
+                    "text": "Premium materials, certified electricians and full testing after work. Safety remains the first checkpoint on every visit."
+                  },
+                  {
+                    "title": "Why Choose Our Switch & Socket Repair?",
+                    "text": "Transparent quotes, on-time completion and dedicated support. ElectroCare is built around reliable electrical work you can trust."
+                  }
+                ]
+              },
+              {
+                "slug": "fan-installation-repair",
+                "title": "Fan Installation & Repair",
+                "subtitle": "Ceiling, exhaust and industrial fans.",
+                "description": "Balanced installation, capacitor replacement and speed regulator repairs.",
+                "badge": "PROFESSIONAL",
+                "overlay_line1": "Fan",
+                "overlay_highlight": "Installation & Repair",
+                "overlay_tagline": "Safe Solutions for a Brighter Tomorrow",
+                "content_blocks": [
+                  {
+                    "title": "Fan Installation & Repair Services",
+                    "text": "Balanced installation, capacitor replacement and speed regulator repairs. Our licensed electricians follow safety codes and complete every job with neat finishing and proper testing."
+                  },
+                  {
+                    "title": "Residential Fan Installation & Repair",
+                    "text": "We tailor fan installation & repair for homes with clear pricing, safe materials and minimal disruption to your daily routine."
+                  },
+                  {
+                    "title": "Commercial Fan Installation & Repair",
+                    "text": "Offices and businesses get load-ready fan installation & repair planned for uptime, safety and future expansion."
+                  },
+                  {
+                    "title": "Quality & Safety Assurance",
+                    "text": "Premium materials, certified electricians and full testing after work. Safety remains the first checkpoint on every visit."
+                  },
+                  {
+                    "title": "Why Choose Our Fan Installation & Repair?",
+                    "text": "Transparent quotes, on-time completion and dedicated support. ElectroCare is built around reliable electrical work you can trust."
+                  }
+                ]
+              },
+              {
+                "slug": "ac-electrical-work",
+                "title": "AC Electrical Work",
+                "subtitle": "Dedicated power for cooling units.",
+                "description": "Stabilizer points, MCB isolation and correctly sized cables for split and cassette ACs.",
+                "badge": "PROFESSIONAL",
+                "overlay_line1": "AC",
+                "overlay_highlight": "Electrical Work",
+                "overlay_tagline": "Safe Solutions for a Brighter Tomorrow",
+                "content_blocks": [
+                  {
+                    "title": "AC Electrical Work Services",
+                    "text": "Stabilizer points, MCB isolation and correctly sized cables for split and cassette ACs. Our licensed electricians follow safety codes and complete every job with neat finishing and proper testing."
+                  },
+                  {
+                    "title": "Residential AC Electrical Work",
+                    "text": "We tailor ac electrical work for homes with clear pricing, safe materials and minimal disruption to your daily routine."
+                  },
+                  {
+                    "title": "Commercial AC Electrical Work",
+                    "text": "Offices and businesses get load-ready ac electrical work planned for uptime, safety and future expansion."
+                  },
+                  {
+                    "title": "Quality & Safety Assurance",
+                    "text": "Premium materials, certified electricians and full testing after work. Safety remains the first checkpoint on every visit."
+                  },
+                  {
+                    "title": "Why Choose Our AC Electrical Work?",
+                    "text": "Transparent quotes, on-time completion and dedicated support. ElectroCare is built around reliable electrical work you can trust."
+                  }
+                ]
+              },
+              {
+                "slug": "cctv-security-wiring",
+                "title": "CCTV & Security Wiring",
+                "subtitle": "Clean cabling for cameras and alarms.",
+                "description": "Power and data routes for CCTV, access control and alarm panels.",
+                "badge": "PROFESSIONAL",
+                "overlay_line1": "CCTV",
+                "overlay_highlight": "& Security Wiring",
+                "overlay_tagline": "Safe Solutions for a Brighter Tomorrow",
+                "content_blocks": [
+                  {
+                    "title": "CCTV & Security Wiring Services",
+                    "text": "Power and data routes for CCTV, access control and alarm panels. Our licensed electricians follow safety codes and complete every job with neat finishing and proper testing."
+                  },
+                  {
+                    "title": "Residential CCTV & Security Wiring",
+                    "text": "We tailor cctv & security wiring for homes with clear pricing, safe materials and minimal disruption to your daily routine."
+                  },
+                  {
+                    "title": "Commercial CCTV & Security Wiring",
+                    "text": "Offices and businesses get load-ready cctv & security wiring planned for uptime, safety and future expansion."
+                  },
+                  {
+                    "title": "Quality & Safety Assurance",
+                    "text": "Premium materials, certified electricians and full testing after work. Safety remains the first checkpoint on every visit."
+                  },
+                  {
+                    "title": "Why Choose Our CCTV & Security Wiring?",
+                    "text": "Transparent quotes, on-time completion and dedicated support. ElectroCare is built around reliable electrical work you can trust."
+                  }
+                ]
+              },
+              {
+                "slug": "inverter-generator-setup",
+                "title": "Inverter & Generator Setup",
+                "subtitle": "Backup power you can trust.",
+                "description": "Changeover, earthing and load grouping for inverters and generators.",
+                "badge": "PROFESSIONAL",
+                "overlay_line1": "Inverter",
+                "overlay_highlight": "& Generator Setup",
+                "overlay_tagline": "Safe Solutions for a Brighter Tomorrow",
+                "content_blocks": [
+                  {
+                    "title": "Inverter & Generator Setup Services",
+                    "text": "Changeover, earthing and load grouping for inverters and generators. Our licensed electricians follow safety codes and complete every job with neat finishing and proper testing."
+                  },
+                  {
+                    "title": "Residential Inverter & Generator Setup",
+                    "text": "We tailor inverter & generator setup for homes with clear pricing, safe materials and minimal disruption to your daily routine."
+                  },
+                  {
+                    "title": "Commercial Inverter & Generator Setup",
+                    "text": "Offices and businesses get load-ready inverter & generator setup planned for uptime, safety and future expansion."
+                  },
+                  {
+                    "title": "Quality & Safety Assurance",
+                    "text": "Premium materials, certified electricians and full testing after work. Safety remains the first checkpoint on every visit."
+                  },
+                  {
+                    "title": "Why Choose Our Inverter & Generator Setup?",
+                    "text": "Transparent quotes, on-time completion and dedicated support. ElectroCare is built around reliable electrical work you can trust."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
