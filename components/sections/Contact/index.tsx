@@ -67,7 +67,7 @@ export default function Contact({ data, services = [] }: ContactProps) {
           initial="hidden"
           whileInView="show"
           viewport={inView}
-          className="mb-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4"
+          className="mb-10 grid grid-cols-1 gap-4 md:grid-cols-3"
         >
           {data.cards.map((c) => {
             const Icon = cardIcons[c.icon] || MapPin;
@@ -77,11 +77,11 @@ export default function Contact({ data, services = [] }: ContactProps) {
                   <Icon size={26} strokeWidth={2.2} />
                 </span>
                 <div className="min-w-0 flex-1">
-                  <h3 className="text-[16px] font-extrabold leading-tight text-[#0b2540] sm:text-[17px]">
+                  <h3 className="text-[18px] font-extrabold leading-tight text-[#0b2540] sm:text-[20px]">
                     {c.title}
                   </h3>
-                  <p className="mt-1 text-[14px] leading-[1.45] text-[#4b5563]">{c.value}</p>
-                  <p className="mt-0.5 min-h-[20px] text-[13px] leading-snug text-[#6b7285]">
+                  <p className="mt-1 text-[16px] leading-[1.45] text-[#4b5563]">{c.value}</p>
+                  <p className="mt-0.5 min-h-[22px] text-[15px] leading-snug text-[#6b7285]">
                     {c.value_line2 || '\u00a0'}
                   </p>
                 </div>

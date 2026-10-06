@@ -711,12 +711,6 @@
                   "value": "info@xyz.com",
                   "value_line2": "We reply within 24 hours",
                   "href": "mailto:info@xyz.com"
-                },
-                {
-                  "icon": "Clock",
-                  "title": "Working Hours",
-                  "value": "Mon - Sat: 9:00 AM - 7:00 PM",
-                  "value_line2": "Sunday: Closed"
                 }
               ],
               "form": {
