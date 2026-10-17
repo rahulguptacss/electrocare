@@ -24,7 +24,7 @@ export default function ServicesPage() {
             { label: 'Home', href: '/' },
             { label: pageData.pageName },
           ]}
-          backgroundImage="/img/breadcrumb.png"
+          backgroundImage="/img/breadcrumb.webp"
         />
         <Services data={sections.services} isGrid itemsPerPage={8} showPagination />
         <Stats data={sections.stats} />

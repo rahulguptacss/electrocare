@@ -23,7 +23,7 @@ export default function GetAQuotePage() {
             { label: 'Home', href: '/' },
             { label: pageData.pageName },
           ]}
-          backgroundImage="/img/breadcrumb.png"
+          backgroundImage="/img/breadcrumb.webp"
         />
         <Quote data={sections.get_a_quote} services={sections.services.items} />
       </main>

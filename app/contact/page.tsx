@@ -23,7 +23,7 @@ export default function ContactPage() {
             { label: 'Home', href: '/' },
             { label: pageData.pageName },
           ]}
-          backgroundImage="/img/breadcrumb.png"
+          backgroundImage="/img/breadcrumb.webp"
         />
         <Contact data={sections.contact} services={sections.services.items} />
       </main>

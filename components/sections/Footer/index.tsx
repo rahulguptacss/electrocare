@@ -143,7 +143,7 @@ export default function Footer({ data }: FooterProps) {
         <motion.div variants={fadeUp} className="lg:max-w-[280px] lg:shrink-0">
           <Link href="/" className="mb-1.5 inline-block">
             <img
-              src="/logo/white-logo.png"
+              src="/logo/white-logo.webp"
               alt={data.logo_text || 'ElectroCare'}
               className="h-[70px] w-auto object-contain"
             />

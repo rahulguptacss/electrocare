@@ -26,7 +26,7 @@ export default function AboutPage() {
             { label: 'Home', href: '/' },
             { label: pageData.pageName },
           ]}
-          backgroundImage="/img/breadcrumb.png"
+          backgroundImage="/img/breadcrumb.webp"
         />
         <About data={sections.about} />
         <Stats data={sections.stats} />

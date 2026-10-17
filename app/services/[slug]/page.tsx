@@ -36,7 +36,7 @@ export default async function ServiceDetailsPage({ params }: { params: Promise<{
   const serviceData: ServiceDetailsData = {
     title,
     description: detailsData?.description || activeService.description,
-    image: activeService.image || '/services/service-01.png',
+    image: activeService.image || '/services/service-01.webp',
     icon: activeService.icon,
     subtitle: detailsData?.subtitle,
     badge: detailsData?.badge || 'PROFESSIONAL',
@@ -60,7 +60,7 @@ export default async function ServiceDetailsPage({ params }: { params: Promise<{
             { label: 'Home', href: '/' },
             { label: pageData.pageName },
           ]}
-          backgroundImage="/img/breadcrumb.png"
+          backgroundImage="/img/breadcrumb.webp"
         />
         <ServiceDetails
           data={serviceData}

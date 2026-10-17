@@ -9,7 +9,7 @@ import { BreadcrumbProps } from '../../types';
 export default function Breadcrumb({
   title,
   breadcrumb,
-  backgroundImage = '/img/breadcrumb.png',
+  backgroundImage = '/img/breadcrumb.webp',
 }: BreadcrumbProps) {
   return (
     <section className="relative flex h-[200px] w-full items-center overflow-hidden bg-[#0b1a28] sm:h-[240px] md:h-[260px] lg:h-[280px]">

@@ -27,7 +27,7 @@ export default function Hero({ data }: HeroProps) {
   return (
     <section className="relative h-[620px] overflow-hidden bg-[#06243b] sm:h-[480px] lg:h-[520px]">
       <motion.img
-        src="/hero/electrician.png"
+        src="/hero/electrician.webp"
         alt=""
         initial={{ scale: 1.08, opacity: 0.6 }}
         animate={{ scale: 1, opacity: 1 }}
@@ -37,14 +37,14 @@ export default function Hero({ data }: HeroProps) {
 
       <div className="absolute inset-0 bg-[#1B8A3E] md:hidden" style={{ clipPath: greenMob }} />
       <img
-        src="/hero/darkblue.png"
+        src="/hero/darkblue.webp"
         alt=""
         className="absolute inset-0 h-full w-full object-cover md:hidden"
         style={{ clipPath: blueMob }}
       />
       <div className="absolute inset-0 hidden bg-[#1B8A3E] md:block" style={{ clipPath: greenDesk }} />
       <img
-        src="/hero/darkblue.png"
+        src="/hero/darkblue.webp"
         alt=""
         className="absolute inset-0 hidden h-full w-full object-cover md:block"
         style={{ clipPath: blueDesk }}

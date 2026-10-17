@@ -237,7 +237,7 @@ export default function About({
             >
 
               <img
-                src="/img/about.png"
+                src="/img/about.webp"
                 alt="About ElectroCare"
                 className="
                   h-full

@@ -23,7 +23,7 @@ export default function GalleryPage() {
             { label: 'Home', href: '/' },
             { label: pageData.pageName },
           ]}
-          backgroundImage="/img/breadcrumb.png"
+          backgroundImage="/img/breadcrumb.webp"
         />
         <PhotoGallery data={sections.photo_gallery} />
       </main>
