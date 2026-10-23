@@ -40,9 +40,9 @@ export default function Topbar({ data }: TopbarProps) {
             const Icon = contactIconMap[item.icon] || FaMapMarkerAlt;
             const href = hrefFor(item.icon, item.value);
             const inner = (
-              <span className="inline-flex items-center gap-[8px] text-[15px] font-normal leading-none text-white">
+              <span className="inline-flex min-w-0 items-center gap-[8px] text-[14px] sm:text-[15px] font-normal leading-none text-white">
                 <Icon className="shrink-0 text-[#1B8A3E]" size={14} />
-                <span className="whitespace-nowrap">{item.value}</span>
+                <span className="truncate">{item.value}</span>
               </span>
             );
 
@@ -54,12 +54,12 @@ export default function Topbar({ data }: TopbarProps) {
                 {href ? (
                   <a
                     href={href}
-                    className={`${index === 0 ? 'inline-flex' : 'hidden sm:inline-flex'} hover:text-[#1B8A3E]`}
+                    className={`${index === 0 ? 'inline-flex min-w-0' : 'hidden sm:inline-flex'} hover:text-[#1B8A3E]`}
                   >
                     {inner}
                   </a>
                 ) : (
-                  <span className={`${index === 0 ? 'inline-flex' : 'hidden sm:inline-flex'}`}>
+                  <span className={`${index === 0 ? 'inline-flex min-w-0' : 'hidden sm:inline-flex'}`}>
                     {inner}
                   </span>
                 )}
@@ -68,8 +68,8 @@ export default function Topbar({ data }: TopbarProps) {
           })}
         </div>
 
-        <div className="flex shrink-0 items-center gap-[10px] pl-4">
-          <span className="hidden text-[15px] font-normal text-white sm:inline">{data.follow_text}</span>
+        <div className="hidden shrink-0 items-center gap-[10px] pl-4 md:flex">
+          <span className="hidden text-[15px] font-normal text-white lg:inline">{data.follow_text}</span>
           <div className="flex items-center gap-[8px]">
             {data.socials.map((social) => {
               const Icon = socialIconMap[social.icon] || FaFacebookF;

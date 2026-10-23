@@ -5,6 +5,7 @@ export interface LinkType {
   href: string;
   active?: boolean;
   sublinks?: LinkType[];
+  children?: LinkType[];
 }
 
 export interface TopbarData {
