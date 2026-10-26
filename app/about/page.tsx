@@ -28,7 +28,7 @@ export default function AboutPage() {
           ]}
           backgroundImage={sections.breadcrumb?.background_image}
         />
-        <About data={sections.about} />
+        <About data={sections.about} hideCta />
         <Stats data={sections.stats} />
         <WhyChoose data={sections.why_choose} />
         <WorkProcess data={sections.work_process} />

@@ -108,21 +108,35 @@ function LinkColumn({
 
 export default function Footer({ data }: FooterProps) {
   const [openAcc, setOpenAcc] = useState<string | null>(null);
-  const bottomLinks = data.bottom_links || [
-    { name: 'Privacy Policy', href: '/privacy-policy' },
-    { name: 'Terms & Conditions', href: '/terms' },
-    { name: 'Sitemap', href: '/sitemap' },
-  ];
 
   const quickLinksTitle = data.quick_links_title || 'Quick Links';
   const ourServicesTitle = data.our_services_title || 'Our Services';
   const labels = data.contact_labels;
 
   const contacts = [
-    { icon: Phone, label: labels?.phone || 'Call Us', value: data.contact.phone },
-    { icon: Mail, label: labels?.email || 'Email Us', value: data.contact.email },
-    { icon: MapPin, label: labels?.address || 'Our Location', value: data.contact.address },
-    { icon: Clock, label: labels?.hours || 'Working Hours', value: data.contact.hours },
+    {
+      icon: Phone,
+      label: labels?.phone || 'Call Us',
+      value: data.contact.phone,
+      href: `tel:${data.contact.phone.replace(/[^0-9+]/g, '')}`,
+    },
+    {
+      icon: Mail,
+      label: labels?.email || 'Email Us',
+      value: data.contact.email,
+      href: `mailto:${data.contact.email}`,
+    },
+    {
+      icon: MapPin,
+      label: labels?.address || 'Our Location',
+      value: data.contact.address,
+      href: `https://maps.google.com/?q=${encodeURIComponent(data.contact.address)}`,
+    },
+    {
+      icon: Clock,
+      label: labels?.hours || 'Working Hours',
+      value: data.contact.hours,
+    },
   ];
 
   return (
@@ -198,38 +212,50 @@ export default function Footer({ data }: FooterProps) {
           variants={fadeUp}
           className="w-max space-y-[22px] border-white/20 lg:shrink-0 lg:border-l lg:pl-8"
         >
-          {contacts.map((item) => (
-            <motion.div
-              key={item.label}
-              className="flex items-start gap-3.5"
-              whileHover={{ x: 4 }}
-              transition={{ type: 'spring', stiffness: 320, damping: 22 }}
-            >
-              <span className="flex h-[46px] w-[46px] shrink-0 items-center justify-center rounded-full bg-[#1B8A3E] text-white">
-                <item.icon size={20} strokeWidth={2} />
-              </span>
-              <div className="min-w-0 pt-0.5">
-                <p className="text-[13px] leading-tight text-white/75">{item.label}</p>
-                <p className="mt-0.5 text-[15px] font-semibold leading-snug text-white">{item.value}</p>
-              </div>
-            </motion.div>
-          ))}
+          {contacts.map((item) => {
+            const inner = (
+              <>
+                <span className="flex h-[46px] w-[46px] shrink-0 items-center justify-center rounded-full bg-[#1B8A3E] text-white transition-transform duration-200 group-hover:scale-105">
+                  <item.icon size={20} strokeWidth={2} />
+                </span>
+                <div className="min-w-0 pt-0.5">
+                  <p className="text-[13px] leading-tight text-white/75">{item.label}</p>
+                  <p className="mt-0.5 text-[15px] font-semibold leading-snug text-white transition-colors duration-200 group-hover:text-[#1B8A3E]">
+                    {item.value}
+                  </p>
+                </div>
+              </>
+            );
+
+            return (
+              <motion.div
+                key={item.label}
+                whileHover={{ x: 4 }}
+                transition={{ type: 'spring', stiffness: 320, damping: 22 }}
+              >
+                {item.href ? (
+                  <a
+                    href={item.href}
+                    target={item.href.startsWith('http') ? '_blank' : undefined}
+                    rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    className="group flex items-start gap-3.5"
+                  >
+                    {inner}
+                  </a>
+                ) : (
+                  <div className="flex items-start gap-3.5">
+                    {inner}
+                  </div>
+                )}
+              </motion.div>
+            );
+          })}
         </motion.div>
       </motion.div>
 
       <div className="relative bg-[#1B8A3E] text-white">
-        <div className="mx-auto flex max-w-[1280px] flex-col items-center justify-between gap-2 px-5 py-3.5 text-[13px] font-medium sm:flex-row sm:px-8">
+        <div className="mx-auto flex max-w-[1280px] items-center justify-center px-5 py-3.5 text-center text-[13px] font-medium sm:px-8">
           <p>{data.copyright}</p>
-          <p className="flex flex-wrap items-center justify-center gap-x-2">
-            {bottomLinks.map((l, i) => (
-              <React.Fragment key={l.name}>
-                {i > 0 && <span className="opacity-70">|</span>}
-                <Link href={l.href} className="transition-opacity hover:opacity-80">
-                  {l.name}
-                </Link>
-              </React.Fragment>
-            ))}
-          </p>
         </div>
       </div>
     </footer>
