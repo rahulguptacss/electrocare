@@ -36,6 +36,7 @@
       ]
     },
     "Header": {
+      "logo_image": "/logo/logo.webp",
       "logo_text": "ElectroCare",
       "links": [
         {
@@ -64,7 +65,9 @@
       "button_link": "/get-a-quote"
     },
     "Footer": {
+      "logo_image": "/logo/white-logo.webp",
       "logo_text": "ElectroCare",
+      "tagline": "Safe Power. Brighter Tomorrow.",
       "description": "Your trusted partner for safe, reliable and professional electrical solutions. We power homes, businesses and brighter futures.",
       "socials": [
         {
@@ -88,6 +91,7 @@
           "href": "https://www.youtube.com/"
         }
       ],
+      "quick_links_title": "Quick Links",
       "quick_links": [
         {
           "name": "Home",
@@ -106,14 +110,15 @@
           "href": "/gallery"
         },
         {
-          "name": "Testimonials",
-          "href": "/#testimonials"
+          "name": "Get A Quote",
+          "href": "/get-a-quote"
         },
         {
           "name": "Contact Us",
           "href": "/contact"
         }
       ],
+      "our_services_title": "Our Services",
       "our_services": [
         {
           "name": "Electrical Installation",
@@ -140,11 +145,19 @@
           "href": "/services/cctv-security-wiring"
         }
       ],
-      "support": [
-        {
-          "name": "FAQ",
-          "href": "/contact"
-        },
+      "contact_labels": {
+        "phone": "Call Us",
+        "email": "Email Us",
+        "address": "Our Location",
+        "hours": "Working Hours"
+      },
+      "contact": {
+        "phone": "+1 00000000000",
+        "email": "info@xyz.com",
+        "address": "123 Education Lane, New York, NY 10001",
+        "hours": "Mon - Sat: 9:00 AM - 7:00 PM"
+      },
+      "bottom_links": [
         {
           "name": "Privacy Policy",
           "href": "/privacy-policy"
@@ -156,22 +169,8 @@
         {
           "name": "Sitemap",
           "href": "/sitemap"
-        },
-        {
-          "name": "Get A Quote",
-          "href": "/get-a-quote"
-        },
-        {
-          "name": "Emergency Support",
-          "href": "/contact"
         }
       ],
-      "contact": {
-        "phone": "+1 00000000000",
-        "email": "info@xyz.com",
-        "address": "123 Education Lane, New York, NY 10001",
-        "hours": "Mon - Sat: 9:00 AM - 7:00 PM"
-      },
       "copyright": "Copyright © 2026. All rights reserved. Powered by Lestow"
     }
   },
@@ -341,6 +340,7 @@
               ]
             },
             "not_found": {
+              "code": "404",
               "title": "404 Error",
               "pageName": "404 Error",
               "heading": "Oops! Page Not Found",
@@ -354,9 +354,14 @@
             }
           },
           "sections": {
+            "breadcrumb": {
+              "background_image": "/img/breadcrumb.webp"
+            },
             "hero": {
+              "background_pattern": "/hero/darkblue.webp",
               "slides": [
                 {
+                  "image": "/hero/electrician.webp",
                   "subtitle": "PROFESSIONAL ELECTRICAL SERVICES",
                   "title_line1": "Safe Power",
                   "title_highlight": "Brighter",
@@ -485,6 +490,7 @@
               ]
             },
             "stats": {
+              "background_image": "/hero/darkblue.webp",
               "items": [
                 {
                   "value": "10K+",
@@ -715,6 +721,8 @@
               ],
               "form": {
                 "subtitle": "SEND US A MESSAGE",
+                "title": "Get In",
+                "title_highlight": "Touch",
                 "description": "Have a question or need a quote? Fill out the form below and our team will get back to you shortly.",
                 "button_text": "SEND MESSAGE",
                 "footer_text": "Your information is safe with us. We never share your details with anyone.",
@@ -753,7 +761,8 @@
               "center": {
                 "image": "/img/contact.webp",
                 "title": "Let's",
-                "title_highlight": "Connect"
+                "title_highlight": "Connect",
+                "overlay_text": "Your Trusted Partner\nfor Electrical Solutions"
               },
               "map": {
                 "embed_url": "https://maps.google.com/maps?q=123%20Education%20Lane%2C%20New%20York%2C%20NY%2010001&t=&z=14&ie=UTF8&iwloc=&output=embed",

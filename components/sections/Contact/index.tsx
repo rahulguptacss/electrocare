@@ -132,7 +132,8 @@ export default function Contact({ data, services = [] }: ContactProps) {
                 variants={fadeUp}
                 className="text-[28px] font-extrabold leading-tight text-[#0b2540] sm:text-[36px]"
               >
-                Get In <span className="text-[#1B8A3E]">Touch</span>
+                {data.form.title || 'Get In'}{' '}
+                <span className="text-[#1B8A3E]">{data.form.title_highlight || 'Touch'}</span>
               </motion.h2>
               <motion.p
                 variants={fadeUp}
@@ -316,11 +317,9 @@ export default function Contact({ data, services = [] }: ContactProps) {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={inView}
                   transition={{ delay: 0.72, duration: 0.4 }}
-                  className="mt-4 text-[12px] leading-[1.55] text-white/90 sm:text-[14px]"
+                  className="mt-4 whitespace-pre-line text-[12px] leading-[1.55] text-white/90 sm:text-[14px]"
                 >
-                  Your Trusted Partner
-                  <br />
-                  for Electrical Solutions
+                  {data.center.overlay_text || 'Your Trusted Partner\nfor Electrical Solutions'}
                 </motion.p>
               </motion.div>
             </div>

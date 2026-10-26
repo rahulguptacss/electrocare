@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Nunito_Sans } from "next/font/google";
 import "./globals.css";
-import { pages } from "../components/types";
+import { common, pages } from "../components/types";
 
 const nunitoSans = Nunito_Sans({
   variable: "--font-nunito-sans",
@@ -11,7 +11,7 @@ const nunitoSans = Nunito_Sans({
 
 export const metadata: Metadata = {
   title: pages.home.metadata.title,
-  description: "Professional electrical services for homes, offices and commercial spaces.",
+  description: common.Footer.description,
 };
 
 export default function RootLayout({

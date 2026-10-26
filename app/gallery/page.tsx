@@ -20,10 +20,10 @@ export default function GalleryPage() {
         <Breadcrumb
           title={pageData.title}
           breadcrumb={[
-            { label: 'Home', href: '/' },
+            { label: pages.home.pageName, href: '/' },
             { label: pageData.pageName },
           ]}
-          backgroundImage="/img/breadcrumb.webp"
+          backgroundImage={sections.breadcrumb?.background_image}
         />
         <PhotoGallery data={sections.photo_gallery} />
       </main>

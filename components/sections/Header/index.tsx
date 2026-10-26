@@ -258,7 +258,7 @@ export default function Header({ data }: HeaderProps) {
       <div className="mx-auto hidden min-h-[76px] max-w-[1280px] items-center justify-between px-4 py-[10px] sm:px-8 lg:flex">
         <Link href="/" className="shrink-0">
           <img
-            src="/logo/logo.webp"
+            src={data.logo_image || "/logo/logo.webp"}
             alt={data.logo_text}
             className="h-[70px] w-auto object-contain"
           />
@@ -351,7 +351,7 @@ export default function Header({ data }: HeaderProps) {
       {/* Mobile Bar */}
       <div className="relative z-20 flex min-h-[64px] items-center justify-between gap-2 bg-white px-4 py-2 lg:hidden">
         <Link href="/" className="min-w-0 shrink">
-          <img src="/logo/logo.webp" alt={data.logo_text} className="h-[48px] w-auto object-contain" />
+          <img src={data.logo_image || "/logo/logo.webp"} alt={data.logo_text} className="h-[48px] w-auto object-contain" />
         </Link>
         <div className="flex shrink-0 items-center gap-2">
           <Link

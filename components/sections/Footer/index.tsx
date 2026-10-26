@@ -107,19 +107,22 @@ function LinkColumn({
 }
 
 export default function Footer({ data }: FooterProps) {
-  const support = data.support || [];
   const [openAcc, setOpenAcc] = useState<string | null>(null);
-  const bottomLinks = [
+  const bottomLinks = data.bottom_links || [
     { name: 'Privacy Policy', href: '/privacy-policy' },
     { name: 'Terms & Conditions', href: '/terms' },
     { name: 'Sitemap', href: '/sitemap' },
   ];
 
+  const quickLinksTitle = data.quick_links_title || 'Quick Links';
+  const ourServicesTitle = data.our_services_title || 'Our Services';
+  const labels = data.contact_labels;
+
   const contacts = [
-    { icon: Phone, label: 'Call Us', value: data.contact.phone },
-    { icon: Mail, label: 'Email Us', value: data.contact.email },
-    { icon: MapPin, label: 'Our Location', value: data.contact.address },
-    { icon: Clock, label: 'Working Hours', value: data.contact.hours },
+    { icon: Phone, label: labels?.phone || 'Call Us', value: data.contact.phone },
+    { icon: Mail, label: labels?.email || 'Email Us', value: data.contact.email },
+    { icon: MapPin, label: labels?.address || 'Our Location', value: data.contact.address },
+    { icon: Clock, label: labels?.hours || 'Working Hours', value: data.contact.hours },
   ];
 
   return (
@@ -143,16 +146,18 @@ export default function Footer({ data }: FooterProps) {
         <motion.div variants={fadeUp} className="lg:max-w-[280px] lg:shrink-0">
           <Link href="/" className="mb-1.5 inline-block">
             <img
-              src="/logo/white-logo.webp"
+              src={data.logo_image || "/logo/white-logo.webp"}
               alt={data.logo_text || 'ElectroCare'}
               className="h-[70px] w-auto object-contain"
             />
           </Link>
           <p className="mb-2 max-w-[270px] text-[13.5px] leading-[1.6] text-white/80">{data.description}</p>
-          <p className="relative mb-3.5 inline-block font-serif text-[15px] italic text-white/95">
-            Safe Power. Brighter Tomorrow.
-            <span className="absolute -bottom-0.5 left-10 h-[2px] w-[62px] rounded-full bg-[#1B8A3E]/90" />
-          </p>
+          {data.tagline && (
+            <p className="relative mb-3.5 inline-block font-serif text-[15px] italic text-white/95">
+              {data.tagline}
+              <span className="absolute -bottom-0.5 left-10 h-[2px] w-[62px] rounded-full bg-[#1B8A3E]/90" />
+            </p>
+          )}
           <div className="flex gap-2.5">
             {data.socials.map((s, i) => {
               const Icon = socialIconMap[s.icon] || FaFacebookF;
@@ -174,24 +179,18 @@ export default function Footer({ data }: FooterProps) {
           </div>
         </motion.div>
 
-        <div className="w-full max-w-full lg:flex lg:w-max lg:flex-wrap lg:gap-x-10">
+        <div className="w-full max-w-full lg:flex lg:w-max lg:flex-wrap lg:gap-x-12 xl:gap-x-16">
           <LinkColumn
-            title="Quick Links"
+            title={quickLinksTitle}
             links={data.quick_links}
-            open={openAcc === 'Quick Links'}
-            onToggle={() => setOpenAcc((v) => (v === 'Quick Links' ? null : 'Quick Links'))}
+            open={openAcc === quickLinksTitle}
+            onToggle={() => setOpenAcc((v) => (v === quickLinksTitle ? null : quickLinksTitle))}
           />
           <LinkColumn
-            title="Our Services"
+            title={ourServicesTitle}
             links={data.our_services}
-            open={openAcc === 'Our Services'}
-            onToggle={() => setOpenAcc((v) => (v === 'Our Services' ? null : 'Our Services'))}
-          />
-          <LinkColumn
-            title="Support"
-            links={support}
-            open={openAcc === 'Support'}
-            onToggle={() => setOpenAcc((v) => (v === 'Support' ? null : 'Support'))}
+            open={openAcc === ourServicesTitle}
+            onToggle={() => setOpenAcc((v) => (v === ourServicesTitle ? null : ourServicesTitle))}
           />
         </div>
 

@@ -42,7 +42,7 @@ export default async function ServiceDetailsPage({ params }: { params: Promise<{
     badge: detailsData?.badge || 'PROFESSIONAL',
     overlay_line1: detailsData?.overlay_line1 || titleWords[0],
     overlay_highlight: detailsData?.overlay_highlight || titleWords.slice(1).join(' '),
-    overlay_tagline: detailsData?.overlay_tagline || 'Safe Solutions for a Brighter Tomorrow',
+    overlay_tagline: detailsData?.overlay_tagline || common.Footer.tagline,
     content_blocks: detailsData?.content_blocks,
     benefits: [],
     process: [],
@@ -57,10 +57,10 @@ export default async function ServiceDetailsPage({ params }: { params: Promise<{
         <Breadcrumb
           title={pageData.title}
           breadcrumb={[
-            { label: 'Home', href: '/' },
+            { label: pages.home.pageName, href: '/' },
             { label: pageData.pageName },
           ]}
-          backgroundImage="/img/breadcrumb.webp"
+          backgroundImage={sections.breadcrumb?.background_image}
         />
         <ServiceDetails
           data={serviceData}

@@ -26,13 +26,22 @@ export interface HeaderData {
 export interface FooterData {
   logo_image?: string;
   logo_text: string;
+  tagline?: string;
   description: string;
   socials: { icon: string; href: string }[];
+  quick_links_title?: string;
   quick_links: LinkType[];
+  our_services_title?: string;
   our_services: LinkType[];
   support?: LinkType[];
-  tagline?: string;
+  contact_labels?: {
+    phone: string;
+    email: string;
+    address: string;
+    hours?: string;
+  };
   contact: { address: string; phone: string; email: string; hours?: string };
+  bottom_links?: LinkType[];
   copyright: string;
 }
 
@@ -50,6 +59,7 @@ export interface HeroSlide {
 }
 
 export interface HeroSectionData {
+  background_pattern?: string;
   slides: HeroSlide[];
 }
 
@@ -113,6 +123,7 @@ export interface ServicesSectionData {
 }
 
 export interface StatsSectionData {
+  background_image?: string;
   items: { value: string; label: string; icon: string }[];
 }
 
@@ -220,6 +231,7 @@ export interface ContactSectionData {
   form: {
     subtitle: string;
     title?: string;
+    title_highlight?: string;
     description: string;
     button_text: string;
     footer_text: string;
@@ -315,6 +327,10 @@ export interface BreadcrumbItem {
   href?: string;
 }
 
+export interface BreadcrumbSectionData {
+  background_image: string;
+}
+
 export interface BreadcrumbProps {
   title: string;
   breadcrumb: BreadcrumbItem[];
@@ -366,6 +382,7 @@ export interface PageComponentRef {
 }
 
 export interface PageMeta {
+  code?: string;
   title: string;
   pageName: string;
   metadata?: { title: string };

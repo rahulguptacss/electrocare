@@ -237,8 +237,8 @@ export default function About({
             >
 
               <img
-                src="/img/about.webp"
-                alt="About ElectroCare"
+                src={data.image || "/img/about.webp"}
+                alt={data.subtitle || "About ElectroCare"}
                 className="
                   h-full
                   w-full

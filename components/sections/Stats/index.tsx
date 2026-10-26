@@ -63,7 +63,7 @@ export default function Stats({ data }: StatsProps) {
   return (
     <section className="relative overflow-hidden py-8 sm:py-10">
       <img
-        src="/hero/darkblue.webp"
+        src={data.background_image || "/hero/darkblue.webp"}
         alt=""
         className="absolute inset-0 h-full w-full object-cover"
       />

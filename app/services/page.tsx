@@ -21,10 +21,10 @@ export default function ServicesPage() {
         <Breadcrumb
           title={pageData.title}
           breadcrumb={[
-            { label: 'Home', href: '/' },
+            { label: pages.home.pageName, href: '/' },
             { label: pageData.pageName },
           ]}
-          backgroundImage="/img/breadcrumb.webp"
+          backgroundImage={sections.breadcrumb?.background_image}
         />
         <Services data={sections.services} isGrid itemsPerPage={8} showPagination />
         <Stats data={sections.stats} />

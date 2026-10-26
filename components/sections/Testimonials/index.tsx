@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { TestimonialsProps } from '../../types';
 import { fadeUp, inView } from '../../motion';
@@ -57,6 +57,7 @@ export default function Testimonials({
   const reviews = data.reviews || [];
   const [page, setPage] = useState(1);
   const [index, setIndex] = useState(0);
+  const indexRef = useRef(0);
   const [anim, setAnim] = useState(true);
   const wrapRef = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(0);
@@ -68,11 +69,15 @@ export default function Testimonials({
       ? reviews.slice((page - 1) * itemsPerPage, page * itemsPerPage)
       : reviews;
 
-  const slides = reviews.length ? [...reviews, ...reviews.slice(0, perView)] : [];
+  const slides = reviews.length ? [...reviews, ...reviews, ...reviews] : [];
   const gap = width < 640 ? 12 : 20;
   const cardW = width ? (width - gap * (perView - 1)) / perView : 0;
   const step = cardW + gap;
   const dot = reviews.length ? index % reviews.length : 0;
+
+  useEffect(() => {
+    indexRef.current = index;
+  }, [index]);
 
   useEffect(() => {
     const el = wrapRef.current;
@@ -83,46 +88,63 @@ export default function Testimonials({
     return () => ro.disconnect();
   }, [isGrid]);
 
-  useEffect(() => {
-    if (isGrid || reviews.length < 2) return;
-    const id = window.setInterval(() => {
-      setAnim(true);
-      setIndex((i) => i + 1);
-    }, 4000);
-    return () => window.clearInterval(id);
-  }, [isGrid, reviews.length]);
-
-  useEffect(() => {
-    if (index !== reviews.length) return;
-    const t = window.setTimeout(() => {
+  const goNext = useCallback(() => {
+    if (!reviews.length) return;
+    if (indexRef.current >= reviews.length) {
+      indexRef.current = 0;
       setAnim(false);
       setIndex(0);
-    }, 700);
-    return () => window.clearTimeout(t);
-  }, [index, reviews.length]);
-
-  const goNext = () => {
-    if (!reviews.length) return;
+      window.requestAnimationFrame(() => {
+        window.requestAnimationFrame(() => {
+          indexRef.current = 1;
+          setAnim(true);
+          setIndex(1);
+        });
+      });
+      return;
+    }
+    indexRef.current += 1;
     setAnim(true);
-    setIndex((i) => i + 1);
-  };
+    setIndex(indexRef.current);
+  }, [reviews.length]);
 
-  const goPrev = () => {
+  const goPrev = useCallback(() => {
     if (!reviews.length) return;
-    if (index === 0) {
+    if (indexRef.current <= 0) {
+      indexRef.current = reviews.length;
       setAnim(false);
       setIndex(reviews.length);
       window.requestAnimationFrame(() => {
         window.requestAnimationFrame(() => {
+          indexRef.current = reviews.length - 1;
           setAnim(true);
           setIndex(reviews.length - 1);
         });
       });
       return;
     }
+    indexRef.current -= 1;
     setAnim(true);
-    setIndex((i) => i - 1);
-  };
+    setIndex(indexRef.current);
+  }, [reviews.length]);
+
+  useEffect(() => {
+    if (isGrid || reviews.length < 2) return;
+    const id = window.setInterval(() => {
+      goNext();
+    }, 4000);
+    return () => window.clearInterval(id);
+  }, [isGrid, reviews.length, goNext]);
+
+  useEffect(() => {
+    if (index < reviews.length) return;
+    const t = window.setTimeout(() => {
+      indexRef.current = 0;
+      setAnim(false);
+      setIndex(0);
+    }, 700);
+    return () => window.clearTimeout(t);
+  }, [index, reviews.length]);
 
   return (
     <section className={`${bgClass} relative overflow-hidden py-10 sm:py-[52px] lg:py-[60px]`} id="testimonials">
@@ -212,6 +234,7 @@ export default function Testimonials({
                   key={i}
                   type="button"
                   onClick={() => {
+                    indexRef.current = i;
                     setAnim(true);
                     setIndex(i);
                   }}
